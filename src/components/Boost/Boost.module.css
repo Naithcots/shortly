@@ -1,0 +1,17 @@
+.container {
+  background-color: var(--dark-violet);
+  background-image: url("/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boost {
+  padding-block: 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 1.65rem;
+}
