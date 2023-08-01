@@ -1,0 +1,33 @@
+.advanced {
+  text-align: center;
+}
+
+.title {
+  font-size: 1.75rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 2ch;
+  color: var(--grayish-violet);
+}
+
+.cards {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.cards::before {
+  --width: 0.5rem;
+
+  content: "";
+
+  width: var(--width);
+  height: 100%;
+
+  position: absolute;
+  left: calc(50% - var(--width) / 2);
+
+  background-color: var(--cyan);
+}

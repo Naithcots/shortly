@@ -1,0 +1,26 @@
+.form {
+    
+
+  padding: 1.5rem;
+  border-radius: 1rem;
+
+  background: url("/bg-shorten-mobile.svg");
+  background-size: 70%;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: var(--dark-violet);
+}
+
+.input {
+  margin-bottom: 1rem;
+
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.button {
+  width: 100%;
+  border-radius: 0.5rem;
+}
