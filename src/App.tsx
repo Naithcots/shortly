@@ -1,6 +1,12 @@
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
-export default App
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
+};
+export default App;
