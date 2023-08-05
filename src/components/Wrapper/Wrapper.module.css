@@ -3,3 +3,9 @@
   padding-inline: 1rem;
   max-width: 60em;
 }
+
+@media screen and (min-width: 45em) {
+  .wrapper {
+    padding-inline: 2.25rem;
+  }
+}
