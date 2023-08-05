@@ -10,10 +10,10 @@ const Header = () => {
   const toogleNav = () => setNavOpen(!navOpen);
 
   return (
-    <div className={styles.stack}>
+    <div className={styles.container}>
       <header>
         <Wrapper>
-          <div className={styles.container}>
+          <div className={styles.header}>
             <img src="/logo.svg" alt="logo" />
             <button
               className={styles["menu-icon-container"]}
@@ -21,6 +21,26 @@ const Header = () => {
             >
               <RiMenuLine className={styles["menu-icon"]} />
             </button>
+
+            <div className={styles["desktop-links"]}>
+              <a href="/" className={styles.link}>
+                Features
+              </a>
+              <a href="/" className={styles.link}>
+                Pricing
+              </a>
+              <a href="/" className={styles.link}>
+                Resources
+              </a>
+            </div>
+            <div className={styles["desktop-links"]}>
+              <a href="/" className={styles.link}>
+                Login
+              </a>
+              <a href="/" className={`${styles.link} ${styles["sign-up"]}`}>
+                Sign Up
+              </a>
+            </div>
           </div>
         </Wrapper>
       </header>

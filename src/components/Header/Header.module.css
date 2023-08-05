@@ -1,8 +1,8 @@
-.stack {
+.container {
   position: relative;
 }
 
-.container {
+.header {
   margin-block: 1.5rem;
 
   display: flex;
@@ -19,4 +19,43 @@
 
 .menu-icon {
   font-size: 2rem;
+}
+
+.desktop-links {
+  display: none;
+}
+
+@media screen and (min-width: 45em) {
+  .header {
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .menu-icon-container {
+    display: none;
+  }
+
+  .desktop-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .link {
+    text-decoration: none;
+    color: var(--grayish-violet);
+  }
+
+  .sign-up {
+    composes: sign-up from "./Nav.module.css";
+    padding: 0.5rem 1.25rem;
+    width: fit-content !important;
+    text-align: center;
+    color: #fff;
+  }
+
+  .desktop-links:last-of-type {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
 }

@@ -43,3 +43,9 @@
 
   background-color: var(--cyan);
 }
+
+@media screen and (min-width: 45em) {
+  .container {
+    display: none;
+  }
+}
