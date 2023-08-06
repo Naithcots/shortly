@@ -1,5 +1,5 @@
 .container {
-  margin-top: 10rem;
+  margin-top: 8rem;
 
   background-color: var(--light-gray);
 }
@@ -10,4 +10,11 @@
 
 .window {
   transform: translateY(-50px);
+}
+
+@media screen and (min-width: 50em) {
+  .window {
+    padding-bottom: 6rem;
+    transform: translateY(0);
+  }
 }

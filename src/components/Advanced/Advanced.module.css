@@ -7,6 +7,8 @@
 }
 
 .description {
+  margin-inline: auto;
+  max-width: 45ch;
   font-size: 1.1rem;
   line-height: 2ch;
   color: var(--grayish-violet);
@@ -30,4 +32,49 @@
   left: calc(50% - var(--width) / 2);
 
   background-color: var(--cyan);
+}
+
+@media screen and (min-width: 45em) {
+  .cards {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 55em) {
+  .cards::before {
+    --width: 0.5rem;
+
+    content: "";
+
+    height: var(--width);
+    width: 100%;
+
+    position: absolute;
+    top: calc(50% + var(--width) / 2);
+    left: 0;
+
+    background-color: var(--cyan);
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 20px auto 20px 20px;
+
+    text-align: left;
+  }
+
+  .cards > *:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / 4;
+  }
+
+  .cards > *:nth-child(2) {
+    grid-column: 2;
+    grid-row: 2 / 5;
+  }
+
+  .cards > *:nth-child(3) {
+    grid-column: 3;
+    grid-row: 3 / 6;
+  }
 }

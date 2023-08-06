@@ -1,8 +1,11 @@
 .form {
-    
-
   padding: 1.5rem;
   border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 
   background: url("/bg-shorten-mobile.svg");
   background-size: 70%;
@@ -12,8 +15,6 @@
 }
 
 .input {
-  margin-bottom: 1rem;
-
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -23,4 +24,24 @@
 .button {
   width: 100%;
   border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 50em) {
+  .form {
+    padding: 2rem 2.5rem;
+    border-radius: 0.5rem;
+    flex-direction: row;
+
+    background: url("/bg-shorten-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--dark-violet);
+  }
+
+  .button {
+    white-space: nowrap;
+    width: fit-content;
+    font-size: 1rem;
+  }
 }
