@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 50em) {
   .window {
-    padding-bottom: 6rem;
+    padding-bottom: 3.5rem;
     transform: translateY(-40px);
   }
 }

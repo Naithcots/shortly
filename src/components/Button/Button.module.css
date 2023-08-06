@@ -11,4 +11,10 @@
   background-color: var(--cyan);
 
   cursor: pointer;
+
+  transition: filter 250ms;
+}
+
+.button:hover {
+  filter: brightness(1.1);
 }

@@ -17,3 +17,10 @@
   font-size: 1.65rem;
   font-size: clamp(1.65rem, 4vw, 2rem);
 }
+
+@media screen and (min-width: 40em) {
+  .container {
+    background-image: url("/bg-boost-desktop.svg");
+    background-size: cover;
+  }
+}

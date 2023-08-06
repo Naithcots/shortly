@@ -44,6 +44,12 @@
   .link {
     text-decoration: none;
     color: var(--grayish-violet);
+
+    transition: filter 250ms;
+  }
+
+  .link:hover {
+    filter: brightness(0);
   }
 
   .sign-up {
@@ -51,7 +57,13 @@
     padding: 0.5rem 1.25rem;
     width: fit-content !important;
     text-align: center;
+    text-decoration: none;
     color: #fff;
+    transition: filter 250ms;
+  }
+
+  .sign-up:hover {
+    filter: brightness(1.1);
   }
 
   .desktop-links:last-of-type {

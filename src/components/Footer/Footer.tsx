@@ -27,10 +27,26 @@ const Footer = () => {
             ))}
           </div>
           <div className={styles.icons}>
-            <img src="/icon-facebook.svg" alt="facebook" />
-            <img src="/icon-twitter.svg" alt="twitter" />
-            <img src="/icon-pinterest.svg" alt="pinterest" />
-            <img src="/icon-instagram.svg" alt="instagram" />
+            <img
+              src="/icon-facebook.svg"
+              alt="facebook"
+              className={styles.icon}
+            />
+            <img
+              src="/icon-twitter.svg"
+              alt="twitter"
+              className={styles.icon}
+            />
+            <img
+              src="/icon-pinterest.svg"
+              alt="pinterest"
+              className={styles.icon}
+            />
+            <img
+              src="/icon-instagram.svg"
+              alt="instagram"
+              className={styles.icon}
+            />
           </div>
         </div>
       </Wrapper>
