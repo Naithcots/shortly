@@ -7,7 +7,7 @@ const Hero = () => {
     <Wrapper>
       <div className={styles.container}>
         <img
-          src="/illustration-working.svg"
+          src={`${import.meta.env.BASE_URL}/illustration-working.svg`}
           alt="illustration"
           className={styles.image}
         />

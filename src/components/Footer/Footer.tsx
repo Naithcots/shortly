@@ -7,7 +7,11 @@ const Footer = () => {
     <footer className={styles.container}>
       <Wrapper>
         <div className={styles.footer}>
-          <img src="/logo.svg" alt="logo" className={styles.logo} />
+          <img
+            src={`${import.meta.env.BASE_URL}/logo.svg`}
+            alt="logo"
+            className={styles.logo}
+          />
           <div className={styles.categories}>
             {linkCategories.map((category) => (
               <div className={styles.category} key={category.id}>
@@ -28,22 +32,22 @@ const Footer = () => {
           </div>
           <div className={styles.icons}>
             <img
-              src="/icon-facebook.svg"
+              src={`${import.meta.env.BASE_URL}/icon-facebook.svg`}
               alt="facebook"
               className={styles.icon}
             />
             <img
-              src="/icon-twitter.svg"
+              src={`${import.meta.env.BASE_URL}/icon-twitter.svg`}
               alt="twitter"
               className={styles.icon}
             />
             <img
-              src="/icon-pinterest.svg"
+              src={`${import.meta.env.BASE_URL}/icon-pinterest.svg`}
               alt="pinterest"
               className={styles.icon}
             />
             <img
-              src="/icon-instagram.svg"
+              src={`${import.meta.env.BASE_URL}/icon-instagram.svg`}
               alt="instagram"
               className={styles.icon}
             />

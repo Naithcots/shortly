@@ -14,7 +14,7 @@ const Header = () => {
       <header>
         <Wrapper>
           <div className={styles.header}>
-            <img src="/logo.svg" alt="logo" />
+            <img src={`${import.meta.env.BASE_URL}/logo.svg`} alt="logo" />
             <button
               className={styles["menu-icon-container"]}
               onClick={toogleNav}
