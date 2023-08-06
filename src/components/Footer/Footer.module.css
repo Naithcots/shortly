@@ -16,8 +16,11 @@
   filter: brightness(0) invert(100%);
 }
 
-.category:not(:first-child) {
-  margin-top: 2rem;
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .category-title {
@@ -41,4 +44,20 @@
 .icons {
   display: flex;
   gap: 1.25rem;
+}
+
+@media screen and (min-width: 60em) {
+  .footer {
+    padding-block: 4rem;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .categories {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+  }
 }
