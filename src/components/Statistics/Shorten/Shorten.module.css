@@ -14,11 +14,28 @@
   background-color: var(--dark-violet);
 }
 
+.input-container {
+  width: 100%;
+}
+
 .input {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
   border: none;
+}
+
+.input-error {
+  border: 2px solid var(--red);
+}
+
+.text-error {
+  margin: 0;
+  margin-top: 0.5rem;
+
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--red);
 }
 
 .button {

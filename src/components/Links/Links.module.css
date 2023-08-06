@@ -1,0 +1,70 @@
+.links {
+  margin-bottom: 5rem;
+}
+
+.link {
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  overflow: hidden;
+
+  background-color: #fff;
+}
+
+.link a {
+  margin-block: 0.85rem;
+  display: block;
+  width: fit-content;
+
+  text-decoration: none;
+  color: var(--very-dark-violet);
+}
+
+.link a:first-child {
+  margin-top: 0;
+}
+
+.sep {
+  width: 150%;
+  height: 1px;
+
+  transform: translateX(-20%);
+
+  background-color: var(--gray);
+}
+
+.short {
+  color: var(--cyan) !important;
+}
+
+.button {
+  padding-block: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.copied {
+  background-color: var(--dark-violet);
+}
+
+@media screen and (min-width: 40em) {
+  .link {
+    display: grid;
+    grid-template-columns: auto auto 150px;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .link a {
+    margin: 0;
+  }
+
+  .short {
+    justify-self: flex-end;
+  }
+
+  .sep {
+    display: none;
+  }
+}
